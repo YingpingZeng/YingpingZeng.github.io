@@ -228,23 +228,25 @@
     .timeline { display: flex; flex-direction: column; gap: 28px; }
 
     .timeline-item {
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 24px;
-      align-items: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
     }
 
     .timeline-date {
       font-size: 0.8rem;
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-tertiary);
-      padding-top: 3px;
-      text-align: right;
     }
 
     .timeline-content {
+      width: 100%;
+      max-width: 600px;
       padding-bottom: 4px;
       border-bottom: 1px solid var(--border);
+      text-align: center;
     }
 
     .timeline-item:last-child .timeline-content { border-bottom: none; }
@@ -428,8 +430,7 @@
 
     /* ─── Responsive ───────────────────────────────────── */
     @media (max-width: 600px) {
-      .timeline-item { grid-template-columns: 1fr; gap: 4px; }
-      .timeline-date { text-align: left; }
+      .timeline-item { flex-direction: column; align-items: center; text-align: center; }
       .edu-card { grid-template-columns: 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
       header { padding: 60px 0 40px; }
