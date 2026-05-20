@@ -357,15 +357,16 @@
     }
 
     .edu-logo {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .edu-logo img {
       width: 48px;
       height: 48px;
-      border-radius: var(--radius-sm);
-      background: linear-gradient(135deg, var(--accent-dim), var(--bg-primary));
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
+      border-radius: 50%;
+      object-fit: cover;
     }
 
     .edu-degree {
@@ -550,7 +551,10 @@
   <section class="section" id="education">
     <div class="section-label">教育背景</div>
     <div class="edu-card">
-      <div class="edu-logo"><img src="robotics.jpg" alt="robotics" style="width:48px;height:48px;border-radius:50%;object-fit:cover;" /></div>
+      <div class="edu-logo">
+        <img src="HNU.jpg" alt="HNU" />
+        <img src="robotics.jpg" alt="robotics" />
+      </div>
       <div>
         <div class="edu-degree">硕士 · 人工智能与机器人学院</div>
         <div class="edu-school">湖南大学</div>
@@ -558,7 +562,10 @@
       </div>
     </div>
     <div class="edu-card" style="margin-top: 16px;">
-      <div class="edu-logo"><img src="robotics.jpg" alt="robotics" style="width:48px;height:48px;border-radius:50%;object-fit:cover;" /></div>
+      <div class="edu-logo">
+        <img src="HNU.jpg" alt="HNU" />
+        <img src="robotics.jpg" alt="robotics" />
+      </div>
       <div>
         <div class="edu-degree">学士 · 人工智能与机器人学院</div>
         <div class="edu-school">湖南大学</div>
